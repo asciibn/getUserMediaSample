@@ -71,9 +71,9 @@ function onButtonEvent(e){
         httpRequest.addEventListener('progress', onProgressFile);
         httpRequest.addEventListener('error', onErrorFile);
 
-        httpRequest.open('POST', 'http://localhost:8888/upload.php', true);
+        httpRequest.open('POST', 'http://localhost:8888/uploadTest.php', true);
         httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        httpRequest.send({wavBase64:wavDataContainer.innerHTML});
+        httpRequest.send("userid=" + wavDataContainer.innerHTML);
 
 	    }
   }

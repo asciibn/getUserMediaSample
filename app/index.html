@@ -31,7 +31,7 @@
 
     <div class="container">
      <div id='recorder'>
-      <form>
+      <form method="POST" action="post-handler.php" onsubmit="submitForm(this);" >
         <button class='btn btn-default' type='button' id='startButton'>Start Recording</button>
         <button class='btn btn-default' type='button' id='stopButton'>Stop Recording</button>
         <button class='btn btn-default' type='button' id='uploadButton'>Upload File</button>
